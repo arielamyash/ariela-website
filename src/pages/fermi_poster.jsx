@@ -33,7 +33,7 @@ function FermiPoster () {
 
                     <div className="poster-display">
                     <embed 
-                        src="/public/Yashinsky_FNAL_Poster_URA.pdf" 
+                        src="/ariela-website/Yashinsky_Research_Poster.pdf" 
                         type="application/pdf" 
                         width="100%" 
                         height="800px"
