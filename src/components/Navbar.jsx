@@ -24,7 +24,7 @@ function Navbar () {
     links.push(
       <a 
         key="resume" 
-        href="/Ariela_Yashinsky_Resume_Website.pdf" 
+        href="/ariela-website/Ariela_Yashinsky_Resume_Website.pdf" 
         target="_blank" 
         rel="noopener noreferrer"
       >
