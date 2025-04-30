@@ -1,0 +1,163 @@
+/* home.css */
+
+.home-container {
+    padding: 2rem;
+
+  }
+  
+  .intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .contact-button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .content-section {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .main-column {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .teaser-card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .sidebar {
+    flex: 1;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    text-align: center;
+  }
+  
+  .doodle-image-wrapper {
+    position: relative;
+    
+  }
+
+  .doodle-carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .doodle-carousel img {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: transform 0.4s ease;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    font-size: 1rem; /* smaller */
+    padding: 0.3rem;
+    cursor: pointer;
+    color: #333;
+    border-radius: 50%;
+    z-index: 2;
+
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .nav-button:focus {
+    outline: 2px solid rgba(100, 100, 100, 0.3);
+    outline-offset: 2px;
+  }
+
+  .nav-button.left {
+    left: -26px;
+  }
+  
+  .nav-button.right {
+    right: -26px;
+  }
+  
+  .playlist-section {
+    margin-top: 2rem;
+  }
+  
+  .playlist {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .playlist-item {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+  
+  .playlist-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .instagram-link {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .instagram-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .instagram-icon:hover {
+    transform: scale(1.1);
+  }
+
+  .sidebar-divider {
+    margin: 1.5rem 0; 
+    border: none;
+    border-top: 2px dashed #ddd; 
+    width: 98%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .logo-wrapper {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .featured-logo {
+    width: 250px; 
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  

@@ -1,0 +1,262 @@
+/* App.css */
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; 
+  font-family: 'Poppins', sans-serif;
+  color: #333333; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.page-title {
+  padding-top: calc(70px + 1rem);
+  margin-top: 2rem;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #4C9F70; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #A3D8F4; 
+  text-decoration: none;
+}
+
+/* Buttons */
+button {
+  color: white;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #F9E79F;;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.page-wrapper {
+  position: relative; 
+  width: 100%;
+  padding-top: 100px; 
+}
+
+.back-button-container {
+  position: absolute; 
+  top: 1.5rem; 
+  left: 2rem; 
+  z-index: 500; 
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+  align-items: left;
+  text-align: left;
+  margin-top: 5rem;
+}
+
+.back-button:hover {
+  color: #0077ff;
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+  .back-button-container {
+    top: 4rem; 
+  }
+}
+
+/* Greeting in the Navbar */
+.Navbar h1 {
+  color: #FFB84D; 
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.7rem; 
+  font-weight: 600;
+  margin: 0; 
+  padding-top: 10px; 
+  padding-bottom: 5px;
+  text-align: center; 
+}
+
+/* Navbar Text Color */
+.Navbar a {
+  color: #e961f6; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.Navbar a:hover {
+  color: #F9E79F; 
+}
+
+@media (max-width: 768px) {
+  .Navbar h1 {
+    font-size: 2.5rem; 
+  }
+
+  .Navbar a {
+    font-size: 1rem; 
+  }
+  .Navbar {
+    padding: 10px 5px; 
+  }
+  .back-button-container {
+    top: 0.0rem;
+    left: 1rem; 
+    z-index: 500;
+  }
+}
+
+/* Navbar */
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fafacd; 
+  padding: 10px 0; 
+  padding-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin: 0;
+  text-align: center;
+  color: #e961f6;
+  justify-content: center;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%; 
+  margin: 0 auto;
+  padding: 100px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+/* General container for all pages */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  max-width: 1000px; 
+  margin: 0 auto;
+  text-align: center; 
+  box-sizing: border-box; 
+  position: relative;
+}
+
+/* Header styling */
+.page-header {
+  width: 100%; 
+  text-align: center; 
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding: 0 20px;
+}
+
+.page-header h1 {
+  color: #4C9F70; 
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  text-align: center;
+  width: 100%;
+}
+
+/* Content styling */
+.page-content {
+  align-items: center;
+  max-width: 800px; 
+  width: 100%; 
+  margin: 0 auto;
+  text-align: center; 
+  line-height: 1.6;
+  padding: 0 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/* Contact Page Styling */
+.contact-page {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-button {
+  background-color: #A3D8F4; 
+  color: #333333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #F9E79F; 
+  color: #333333;
+}
+
+.bio-text {
+  text-align: left;
+}
+
+.about-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.waving-img {
+  width: 200px;
+  height: auto;
+}
+
+

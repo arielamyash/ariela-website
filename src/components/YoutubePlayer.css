@@ -1,0 +1,132 @@
+/* YoutubePlayer.css */
+
+.player-inner-wrapper {
+    transition: all 0.3s ease;
+  }
+  
+  .youtube-player-wrapper.closing .player-inner-wrapper {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  
+  .youtube-player-wrapper {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: all 0.4s ease-in-out;
+    transform-origin: bottom right;
+  }
+  
+  .youtube-player-wrapper.minimized {
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.youtube-player-buttons.closing {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Buttons */
+  .youtube-player-buttons {
+    position: fixed;
+    right: 1rem;
+    bottom: calc(1rem + 200px);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .youtube-player-buttons.bottom-buttons {
+    bottom: 1rem;
+  }
+  
+  .youtube-player-buttons button {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    color: #000;
+  }
+  
+  .youtube-player-buttons button:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  .youtube-player-buttons button:focus {
+    outline: none;
+  }
+  
+  .next-prompt {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff8dc;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    padding: 1rem; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; 
+    animation: fadeIn 0.5s ease-in-out;
+    z-index: 10001;
+  }
+  
+  .next-prompt-buttons {
+    display: flex;
+    gap: 0.75rem; 
+    margin-top: 0.5rem;
+  }
+  
+  .next-prompt p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .next-prompt button {
+    background: #ffcc00;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem; 
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.3s;
+  }
+  
+  .next-prompt button:hover {
+    background: #ffdb4d;
+  }
+  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+  

@@ -1,0 +1,41 @@
+/* FileUploadBox.css */
+
+.file-upload-box {
+    border: 2px dashed #888;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    min-height: 150px;
+    box-sizing: border-box;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 1rem auto;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .file-upload-box:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .upload-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .upload-input {
+    display: none;
+  }
+
+  .drag-active {
+    background-color: #f0f0f0;
+  }
+  
+  
+  

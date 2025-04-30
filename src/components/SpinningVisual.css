@@ -1,0 +1,45 @@
+/* SpinningVisual.css */
+
+.spinning-wrapper {
+    position: relative;
+    width: 80vw; 
+    min-width: 200px;
+    max-width: 425px; 
+    aspect-ratio: 1 / 1; 
+    margin: 0 auto; 
+    margin-bottom: 40px;
+    background-color: white;
+  }
+
+  .spinning-background,
+.spinning-foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinning-background img{
+    width: 120%; 
+    height: 120%;
+    object-fit: contain;
+
+}
+.spinning-foreground img {
+  width: 45%;
+  height: 45%;
+  object-fit: contain;
+}
+
+  
+.spinning-background {
+    z-index: 1;
+  }
+  
+  .spinning-foreground {
+    z-index: 2;
+  }
