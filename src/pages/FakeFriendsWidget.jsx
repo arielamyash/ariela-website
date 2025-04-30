@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { motion, AnimatePresence } from "framer-motion";
 import FileUploadBox from "../components/FileUploadBox"; 
+import fake_followers from "/public/fake_followers_trans.png";
+import confused from "/public/confused.png";
 
 import JSZip from "jszip";
 
@@ -138,7 +140,7 @@ function FakeFriendsWidget() {
                 {step === 0 && (
                     <div className="welcome-screen">
                         <img 
-                            src="/fake_followers_trans.png" 
+                            src={fake_followers} 
                             alt="Fake Friends"
                             className="fakefriends-welcome-image" 
                         />
@@ -395,7 +397,7 @@ function FakeFriendsWidget() {
                             <h2>Oops! Something went wrong.</h2>
                             <p>Make sure you uploaded the correct Instagram ZIP file.</p>
                             <img 
-                                src="/confused.png" 
+                                src={confused} 
                                 alt="Confused"
                                 className="confused-error-image" 
                             />
