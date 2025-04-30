@@ -5,19 +5,33 @@ import { useNavigate } from 'react-router-dom';
 import { PlayerContext } from '../PlayerContext';
 import SpinningVisual from '../components/SpinningVisual';
 import './Home.css'; 
+import confused from "/public/confused.png";
+import fake_friends from "/public/fake_followers_trans.png";
+import insta_logo from "/public/insta_logo.png";
+import duck_heart from "/public/doodles/duck_heart.jpg";
+import bagged_apples from "/public/doodles/bagged_apples.jpg";
+import corndog from "/public/doodles/corndog.jpg";
+import butterfly from "/public/doodles/butterfly_friend.jpg"
+import flower from "/public/doodles/flower_cactus.jpg";
+import turtle from "/public/doodles/turtle_stack.jpg";
+import slippers from "/public/doodles/duck_slippers.jpg";
+import froot from "/public/doodles/froot.jpg";
+import cowboy from "/public/doodles/cowboy.jpg";
+import cowboy_dog from "/public/doodles/cowboy_dog.jpg";
+import tomater from "/public/doodles/tomater.jpg";
 
 const doodles = [
-  "/doodles/duck_heart.jpg",
-  "/doodles/bagged_apples.JPEG",
-  "/doodles/corndog.jpg",
-  "/doodles/butterfly_friend.JPEG",
-  "/doodles/flower_cactus.jpg",
-  "/doodles/turtle_stack.jpg",
-  "public/doodles/duck_slippers.jpg",
-  "/doodles/froot.JPEG",
-  "/doodles/cowboy.jpg",
-  "/doodles/cowboy_dog.jpg",
-  "/doodles/tomater.JPEG"
+  duck_heart,
+  bagged_apples,
+  corndog,
+  butterfly,
+  flower,
+  turtle,
+  slippers,
+  froot,
+  cowboy,
+  cowboy_dog,
+  tomater
 ];
 
 
@@ -106,7 +120,7 @@ function Home() {
           <div className="teaser-card">
             <h3>Who is Ariela?</h3>
             <div className="logo-wrapper">
-              <img src="/confused.png" alt="Confused Ariela" className="featured-logo" />
+              <img src={confused} alt="Confused Ariela" className="featured-logo" />
             </div>
             <p>Considering this is her website, this is an important question. 
             </p>
@@ -116,7 +130,7 @@ function Home() {
           <div className="teaser-card">
             <h3>My Featured Project</h3>
             <div className="logo-wrapper">
-              <img src="/fake_followers_trans.png" alt="Fake Followers Logo" className="featured-logo" />
+              <img src={fake_friends} alt="Fake Followers Logo" className="featured-logo" />
             </div>
             <p>Check out my latest project Fake Instagram Friends! </p>
             <button onClick={() => navigate('/projects')}>See Project →</button>
@@ -140,7 +154,7 @@ function Home() {
               <div className="instagram-link">
                 <a href="https://www.instagram.com/arielas_schtick/" target="_blank" rel="noopener noreferrer">
                 <img 
-                    src="public/insta_logo.png"
+                    src={insta_logo}
                     alt="Instagram" 
                     className="instagram-icon" 
                 />

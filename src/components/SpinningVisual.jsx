@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './SpinningVisual.css';
 
+import center_swivel from "/public/center_swivel.png"
+import spinner from "/public/spinner.png"
+
 const SpinningVisual = () => {
   const [rotation, setRotation] = useState(0);
   const lastScrollY = useRef(0);
@@ -50,10 +53,10 @@ const SpinningVisual = () => {
   return (
     <div className="spinning-wrapper ${className}">
         <div className="spinning-background" style={{ transform: `rotate(${rotation}deg)` }}>
-        <img src="/spinner.png" alt="Spinning background" />
+        <img src={spinner} alt="Spinning background" />
         </div>
         <div className="spinning-foreground">
-        <img src="/center_swivel.png" alt="Stationary foreground" />
+        <img src={center_swivel} alt="Stationary foreground" />
         </div>
     </div>
   );
