@@ -2,6 +2,7 @@
 
 import PageLayout from "../components/pageLayout";
 import "./contact.css";
+import computer from "/public/arielas_pc.png"
 
 function Contact() {
   return (
@@ -16,7 +17,7 @@ function Contact() {
 
         <div className="computer-wrapper">
           <img
-            src="/arielas_pc.png"
+            src={computer}
             alt="Let's Connect"
             className="computer-image"
           />
