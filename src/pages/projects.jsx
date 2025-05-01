@@ -3,6 +3,7 @@
 import { useNavigate } from 'react-router-dom';
 import './Projects.css'; 
 import fake_friends from "/public/fake_followers.jpg";
+
 import higgs from "/public/higgs.jpg";
 
 function Projects() {
