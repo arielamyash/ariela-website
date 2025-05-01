@@ -85,4 +85,11 @@
       font-size: 0.9rem;
       padding: 0.7em 1em;
     }
+
+    .contact-text {
+
+        font-size: 0.95rem;
+        line-height: 1.5;
+        
+    }
   }

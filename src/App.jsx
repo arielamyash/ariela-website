@@ -18,8 +18,8 @@ import FermiPoster from './pages/fermi_poster';
 
 
 function App() {
-  const greetings = ["Hi", "Hello", "Hey", "Hi there", "Hola", "Salutations", 
-    "Greetings", "Howdy", "What's up", "Cheers", "Hellooo"];
+  const greetings = ["Hi", "Hello", "Hey", "Hi there", "Hola", 
+   "Howdy", "Cheers", "Hellooo"];
   const [greeting, setGreeting] = useState("Hi");
   const location = useLocation();
 

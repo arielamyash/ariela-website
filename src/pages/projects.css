@@ -102,5 +102,10 @@
     .project-content p {
       font-size: 0.95rem;
     }
+
+    .projects-intro {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
   }
   

@@ -260,7 +260,32 @@ button:focus-visible {
 }
 
 @media (max-width: 768px){
+  h1 {
+    font-size: 2rem;
+  }
 
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .page-title,
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .bio-text {
+    font-size: 0.95rem;
+  }
 }
+
 
 
