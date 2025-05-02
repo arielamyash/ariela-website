@@ -169,29 +169,6 @@
 }
 
 
-
-@media (max-width: 768px) {
-    .modal-content {
-      padding: 1rem;
-      font-size: 0.9rem;
-      width: 95%;
-    }
-  
-    .close-button {
-      font-size: 1.25rem;
-      top: 0.5rem;
-      left: 0.5rem;
-    }
-  
-    .modal-content h2 {
-      font-size: 1rem;
-    }
-  
-    .modal-content p {
-      font-size: 0.85rem;
-    }
-  }
-
 .fake-friends-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -281,3 +258,27 @@
     margin: 20px 0;
   }
   
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      padding: 1rem;
+      font-size: 0.9rem;
+      width: 95%;
+    }
+  
+    .close-button {
+      font-size: 1.25rem;
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+  
+    .modal-content h2 {
+      font-size: 1rem;
+    }
+  
+    .modal-content p {
+      font-size: 0.85rem;
+    }
+
+    
+  }
