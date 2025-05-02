@@ -144,7 +144,7 @@ function FakeFriendsWidget() {
                             alt="Fake Friends"
                             className="fakefriends-welcome-image" 
                         />
-                        <h1 className="text-3xl font-bold mb-4">
+                        <h1 className="step-title">
                             Welcome to Fake Friends Checker!
                         </h1>
                         <button 
@@ -238,7 +238,6 @@ function FakeFriendsWidget() {
                         <div className="instructions-container">
                             {/* Website Instructions */}
                             <div className="instruction-box">
-                                <h3>Download from Instagram</h3>
                                 <ol>
                                     <li>Go to <a 
                                     href="https://www.instagram.com" 
@@ -394,7 +393,7 @@ function FakeFriendsWidget() {
                         </>
                         ) : (
                         <div className="error-screen">
-                            <h2>Oops! Something went wrong.</h2>
+                            <h2 className="step-title">Oops! Something went wrong.</h2>
                             <p>Make sure you uploaded the correct Instagram ZIP file.</p>
                             <img 
                                 src={confused} 

@@ -257,6 +257,7 @@
     max-width: 90%;
     margin: 20px 0;
   }
+
   
   
   @media (max-width: 768px) {
@@ -280,5 +281,13 @@
       font-size: 0.85rem;
     }
 
-    
+    .step-title {
+        font-size: 1.25rem;
+    }
+
+    .confused-error-image,
+    .fakefriends-welcome-image {
+        width: 200px;
+    }
+
   }
